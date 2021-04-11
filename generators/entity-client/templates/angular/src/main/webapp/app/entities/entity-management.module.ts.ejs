@@ -17,6 +17,7 @@
  limitations under the License.
 -%>
 import { NgModule } from '@angular/core';
+import { QRCodeModule } from 'angular2-qrcode'; 
 
 import { SharedModule } from 'app/shared/shared.module';
 import { <%= entityAngularName %>Component } from './list/<%= entityFileName %>.component';
@@ -30,6 +31,7 @@ import { <%= entityAngularName %>RoutingModule } from './route/<%= entityFileNam
 @NgModule({
     imports: [
         SharedModule,
+        QRCodeModule,
         <%= entityAngularName %>RoutingModule,
     ],
     declarations: [

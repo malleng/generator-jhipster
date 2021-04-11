@@ -97,7 +97,12 @@ _%>
 }
 _%>
             </dl>
-
+            <dt>QrCode</dt>
+            <dd>
+            <div>
+                <qrcode [value]="Test QR Code Entity" [size]="150"></qrcode>
+            </div>
+            </dd>
             <button type="submit"
                     (click)="previousState()"
                     class="btn btn-info"
